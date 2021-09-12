@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "rm -rf .parcel-cache && parcel index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
     "parcel": "^2.0.0-rc.0",
-    "react-app-polyfill": "^1.0.0"
+    "react-app-polyfill": "^1.0.0",
+    "react-hot-loader": "^4.13.0"
   },
   "alias": {
     "react": "../node_modules/react",
@@ -21,5 +22,21 @@
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^5.1.14",
     "typescript": "^3.4.5"
+  },
+  "targets": {
+    "web": {
+      "context": "browser",
+      "engines": {
+        "browsers": [
+          "last 2 version",
+          "not dead",
+          "> 0.2%"
+        ]
+      },
+      "includeNodeModules": true,
+      "outputFormat": "commonjs",
+      "isLibrary": false,
+      "scopeHoist": false
+    }
   }
 }
