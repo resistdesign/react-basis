@@ -4,11 +4,7 @@ import {hot} from 'react-hot-loader';
 import * as React from 'react';
 
 const Header = styled(HeaderBasis)`
-  margin: 0;
   padding: 0.25em;
-  box-sizing: border-box;
-  position: sticky;
-  top: 0;
 
   background-color: white;
 `;
