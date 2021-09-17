@@ -1,9 +1,15 @@
 import styled from 'styled-components';
-import {AppBasis, HeaderBasis} from '../src';
+import {AppBasis, FooterBasis, HeaderBasis} from '../src';
 import {hot} from 'react-hot-loader';
 import * as React from 'react';
 
 const Header = styled(HeaderBasis)`
+  padding: 0.25em;
+
+  background-color: white;
+`;
+
+const Footer = styled(FooterBasis)`
   padding: 0.25em;
 
   background-color: white;
@@ -115,6 +121,11 @@ const App = () => {
                     Other stuff to scroll to!
                 </details>
             </Box>
+            <Footer
+                sticky
+            >
+                I just got a dumpster to clean out my basement 😮
+            </Footer>
         </AppBasis>
     );
 };
