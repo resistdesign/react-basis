@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import {AppBasis} from '../src';
+import {AppBasis, HeaderBasis} from '../src';
 import {hot} from 'react-hot-loader';
 import * as React from 'react';
 
-const Header = styled.h3`
+const Header = styled(HeaderBasis)`
   margin: 0;
   padding: 0.25em;
   box-sizing: border-box;
@@ -28,7 +28,9 @@ const App = () => {
         <AppBasis
             rootSelector="body > div#root"
         >
-            <Header>
+            <Header
+                sticky
+            >
                 What's happening in your attic, right now!?
             </Header>
             <Box>
