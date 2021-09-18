@@ -1,5 +1,8 @@
 {
-  "version": "0.1.0",
+  "name": "react-basis",
+  "version": "1.0.0",
+  "public": true,
+  "private": false,
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,7 +37,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-basis",
   "author": "Ryan Graff",
   "module": "dist/react-basis.esm.js",
   "size-limit": [
