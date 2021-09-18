@@ -1,4 +1,3 @@
 # React Basis
 
-The base layout components, including `Application`, for any
-React app.
+The base layout components, including `AppBasis`, for any React app.

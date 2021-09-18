@@ -1,6 +1,7 @@
 {
   "name": "@resistdesign/react-basis",
-  "version": "1.0.0",
+  "description": "The base layout components, including `AppBasis`, for any React app.",
+  "version": "1.0.1",
   "public": true,
   "private": false,
   "license": "MIT",
